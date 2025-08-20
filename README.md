@@ -73,7 +73,7 @@ Route.post("/user", ({ body }) => ({ id: 1, ...body }));
 Server.hooks.beforeStart(() => console.log("🛠 Setting up..."));
 ```
 ##⚡ Quick Start
-1. Create a New Project
+###1. Create a New Project
 ```bash
 npx create-nuble-app my-app
 cd my-app
@@ -96,8 +96,8 @@ my-app/
 ├─ tsconfig.json           # TypeScript configuration
 ├─ prettier.config.js      # Prettier configuration
 └─ package.json
-
-3. Your First Route
+```
+###3. Your First Route
 ```js
 // routes/hello/route.ts
 import { Route } from "nuble/core";
