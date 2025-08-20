@@ -58,6 +58,7 @@ app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
 ```
+
 ### After (Nuble)
 ```js
 import { Server, Route } from "nuble/core";
@@ -72,13 +73,18 @@ Route.post("/user", ({ body }) => ({ id: 1, ...body }));
 // Add lifecycle hooks
 Server.hooks.beforeStart(() => console.log("🛠 Setting up..."));
 ```
-##⚡ Quick Start
-###1. Create a New Project
+
+---
+
+## ⚡ Quick Start
+
+### 1. Create a New Project
 ```bash
 npx create-nuble-app my-app
 cd my-app
 npm run dev
 ```
+
 ### 2. Project Structure
 
 ```text
@@ -97,7 +103,8 @@ my-app/
 ├─ prettier.config.js      # Prettier configuration
 └─ package.json
 ```
-###3. Your First Route
+
+### 3. Your First Route
 ```js
 // routes/hello/route.ts
 import { Route } from "nuble/core";
@@ -112,20 +119,25 @@ Route.post("/hello", ({ body }) => ({
   received: body
 }));
 ```
-##🚀 Core Features
-###🎯 Smart Routing
+
+---
+
+## 🚀 Core Features
+
+### 🎯 Smart Routing
 ```js
 Route.get("/users/:id", ({ params }) => `User ID: ${params.id}`);
 Route.post("/users", ({ body }) => createUser(body));
 Route.delete("/users/:id", ({ params }) => deleteUser(params.id));
 ```
-###🛡️ Security by Default
-✅ CORS enabled
-✅ Helmet protection
-✅ Rate limiting
+
+### 🛡️ Security by Default
+✅ CORS enabled  
+✅ Helmet protection  
+✅ Rate limiting  
 ✅ Request validation
 
-###🔧 Powerful Hooks
+### 🔧 Powerful Hooks
 ```js
 Server.hooks
   .beforeStart(async () => {
@@ -139,7 +151,8 @@ Server.hooks
     console.error("💥 Server error:", error);
   });
 ```
-###📁 File-based Middleware
+
+### 📁 File-based Middleware
 ```js
 // routes/admin/middleware.ts
 export const authMiddleware = ({ headers }) => {
@@ -148,6 +161,7 @@ export const authMiddleware = ({ headers }) => {
   }
 };
 ```
+
 ### 🌍 Environment Validation
 ```js
 import { z } from "zod";
@@ -160,31 +174,35 @@ const envSchema = z.object({
 
 Server.env(envSchema);
 ```
+
 ---
-##📦 Roadmap (v1.0)
 
-***✅ Completed***
-	•	Auto-starting server
-	•	Route DSL (Route.get, Route.post, etc.)
-	•	Built-in security defaults
-	•	TypeScript support
+## 📦 Roadmap (v1.0)
 
-**🔧 In Progress**
-	•	File-based routing system
-	•	File-based middleware
-	•	Hooks lifecycle system
-	•	Environment validation with Zod
+### ✅ Completed
+- [x] Auto-starting server
+- [x] Route DSL (Route.get, Route.post, etc.)
+- [x] Built-in security defaults
+- [x] TypeScript support
 
-**🎯 Planned**
-	•	Pretty logs with colors
-	•	LAN access with QR codes
-	•	Plugin system
-	•	Database integrations
-	•	Authentication helpers
-	•	WebSocket support
-	•	Testing utilities
-	•	Docker support
+### 🔧 In Progress
+- [ ] File-based routing system
+- [ ] File-based middleware
+- [ ] Hooks lifecycle system
+- [ ] Environment validation with Zod
+
+### 🎯 Planned
+- [ ] Pretty logs with colors
+- [ ] LAN access with QR codes
+- [ ] Plugin system
+- [ ] Database integrations
+- [ ] Authentication helpers
+- [ ] WebSocket support
+- [ ] Testing utilities
+- [ ] Docker support
+
 ---
+
 ## 🤝 Contributing Guidelines
 
 We welcome contributions from the community! 🎉  
@@ -196,11 +214,14 @@ We welcome contributions from the community! 🎉
 - 📄 **Guidelines** → See [CONTRIBUTING.md](./CONTRIBUTING.md) for full details  
 
 ---
+
 ## 📄 License
 
 Nuble is licensed under the **MIT License**.  
 See [LICENSE](./LICENSE) for more information.
+
 ---
+
 <div align="center">
 
 **Made with ☕ and ❤️**
