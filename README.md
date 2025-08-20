@@ -205,7 +205,7 @@ Server.env(envSchema);
 
 ## 🤝 Contributing Guidelines
 
-We welcome contributions from the community! 🎉  
+I welcome contributions from the community! 🎉  
 
 - 📐 **Code Style** → Follow the existing style (Prettier + ESLint)  
 - 🧪 **Testing** → Write tests for any new features or bug fixes  
@@ -224,7 +224,7 @@ See [LICENSE](./LICENSE) for more information.
 
 <div align="center">
 
-**Made with ☕ and ❤️**
+**Made with ☕ and ❤️ By Nabil Mouzouna**
 
 [Website](https://github.com/NabilMouzouna/nuble-framework) • [Documentation](https://github.com/NabilMouzouna/nuble-framework) 
 
