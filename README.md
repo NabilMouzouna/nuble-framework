@@ -79,7 +79,9 @@ npx create-nuble-app my-app
 cd my-app
 npm run dev
 ```
-2. Project Structure
+### 2. Project Structure
+
+```text
 my-app/
 ├─ routes/
 │  ├─ user/
