@@ -8,8 +8,8 @@ This document outlines the planned milestones for the Nuble framework.
 
 Goal: Get **Nuble Core** bootstrapped with minimal but working features.
 
-- [ ] Repo setup with MIT license, README, CONTRIBUTING.md
-- [ ] Monorepo with PNPM workspaces (or TurboRepo)
+- [x] Repo setup with MIT license, README, CONTRIBUTING.md
+- [x] Monorepo with PNPM workspaces TurboRepo
 - [ ] Packages:
   - `nuble-core` → framework logic
   - `create-nuble-app` → scaffolder CLI (later)

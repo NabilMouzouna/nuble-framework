@@ -201,6 +201,7 @@ Server.env(envSchema);
 - [ ] Testing utilities
 - [ ] Docker support
 
+→ See [MILESTONES.md](./MILESTONES.md) for full details 
 ---
 
 ## 🤝 Contributing Guidelines
